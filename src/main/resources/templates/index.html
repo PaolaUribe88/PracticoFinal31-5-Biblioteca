@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>BIBLIOTECA </title>
+		<link href="/css/estilo.css" rel="stylesheet"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	</head>
+	<body >
+	<nav class="navbar fixed-top navbar-expand-lg  light bg-dark "style="background-color:fuchsia; ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Biblioteca</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              	<li class="nav-item">
+                	 <a class="nav-link active" aria-current="page" href="#"> AUTOR</a>
+              	</li>
+              	<li>
+                	<a class="nav-link" th:href="@{/autor/nuevo}"> Nuevo Autor</a>
+              	</li>
+              	<li>
+                	<a class="nav-link" th:href="@{/autor/listadoA}"> Listado Autores</a>
+              	</li>
+           </ul>
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              	<li class="nav-item">
+                	 <a class="nav-link active" aria-current="page" href="#"> LIBRO</a>
+              	</li>
+              	<li>
+                	<a class="nav-link" th:href="@{/libro/nuevo}"> Nuevo Libro</a>
+              	</li>
+              	<li>
+                	<a class="nav-link" th:href="@{/libro/listado}"> Listado Libros</a>
+              	</li>
+              	Bienvenido <span data-sec-authentication="name" />
+              	<li class="nav-item"><a class="nav-link" data-th-href="@{/salir}">Salir</a></li>
+           </ul>
+          </div>
+        </div>
+	</nav>
+		<br><br><br>
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" align="center">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	    <h1>GABRIELA MISTRAL</h1>
+	       <img th:src="@{/imagenes/gabriela.jpg}" class="d-block w-30" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>SHAKESPEARE</h1>
+	      <img th:src="@{/imagenes/Shakespeare.jpg}" class="d-block w-40" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	    <h1>MARCELA PAZ</h1>
+	       <img th:src="@{/imagenes/marcela.jpg}" class="d-block w-30" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	    <h1>SIGMUND FREUD</h1>
+	       <img th:src="@{/imagenes/sigmund.jpg}" class="d-block w-20" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>MARGARET MITCHELL</h1>
+	       <img th:src="@{/imagenes/margaret.jpg}" class="d-block w-20" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>MIGUEL DE CERVANTES</h1>
+	       <img th:src="@{/imagenes/miguel.jpg}" class="d-block w-30" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>REBECCA MILLER</h1>
+	       <img th:src="@{/imagenes/rebecca.jpg}" class="d-block w-30" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>CALDERON DE LABARCA</h1>
+	       <img th:src="@{/imagenes/calderon.jpg}" class="d-block w-40" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>VIRGINIA WOLF</h1>
+	       <img th:src="@{/imagenes/virginia.jpg}" class="d-block w-30" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>PABLO NERUDA</h1>
+	       <img th:src="@{/imagenes/pablo.jpg}" class="d-block w-35" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>T.H. WHITE</h1>
+	       <img th:src="@{/imagenes/th.jpg}" class="d-block w-10" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>WILLIAM GOLDMAN</h1>
+	       <img th:src="@{/imagenes/william.jpg}" class="d-block w-10" alt="..." >
+	    </div>
+	    <div class="carousel-item">
+	    <h1>J.R.R TOLKIEN</h1>
+	       <img th:src="@{/imagenes/jr.jpg}" class="d-block w-10" alt="..." >
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden" style="color: black;">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden" style="color: black;">Next</span>
+	  </button>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
